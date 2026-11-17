@@ -46,7 +46,7 @@ import Universe from './Universe';
           googlePlay=""
            appStore=""/>
 
-      <h3 className='p-4 text-center'>Want to know more about our technology stack? Check out the <a href=''>Zerodha.tech</a> blog.</h3>       
+      <h3 className='p-4 text-center'>Want to know more about our technology stack? Check out the <a href="https://zerodha.tech/" target="_blank" rel="noopener noreferrer">Zerodha.tech</a> blog.</h3>       
        <Universe/>
     </>
    );

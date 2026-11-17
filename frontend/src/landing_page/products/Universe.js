@@ -20,7 +20,7 @@ function Universe() {
                 </div>
                 <div className='col p-5 '>
                     <div className='mb-5'>
-                    <img src='\images\sensibullLogo.svg'style={{width:"60%"}} alt="Product Image"/>
+                    <img src='\images\sensibullLogo.svg'style={{width:"60%"}} alt="SensibullLogo"/>
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                      <div>
@@ -31,7 +31,7 @@ function Universe() {
                 <div className='col p-5'>
                     
                     <div className='mb-5'>
-                    <img src='\images\sensibullLogo.svg'style={{width:"60%"}} alt="Sensible Image"/>
+                    <img src='\images\sensibullLogo.svg'style={{width:"60%"}} alt="SensibullLogo"/>
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                      <div>
