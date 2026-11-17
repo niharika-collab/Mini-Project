@@ -10,7 +10,7 @@ function RightSection({productName,productDescription,lernMore,imageUrl}) {
                     <a href='{learnMore}'>Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
                 <div className='col '>
-                    <img src={imageUrl}/>
+                    <img src={imageUrl}alt="Product illustration"/>
                 </div>
             </div>
             
