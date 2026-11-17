@@ -10,11 +10,11 @@ function Universe() {
             <div className='row p-5'>
                 <div className='col p-5'>
                     <div className='mb-5'>
-                    <img src='\images\zerodhaFundhouse.png'style={{width:"60%"}}alt="Investment platform"/>
+                    <img src='\images\zerodhaFundhouse.png'style={{width:"60%"}}alt="zerodhaFundhous"/>
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                     <div>
-                    <img src='\images\streakLogo.png'style={{width:"60%"}} alt="Trading platform"/>
+                    <img src='\images\streakLogo.png'style={{width:"60%"}} alt="streakLogo"/>
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ function Universe() {
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                      <div>
-                    <img src='\images\dittoLogo.png'style={{width:"60%"}} alt="Ditto logo"/>
+                    <img src='\images\dittoLogo.png'style={{width:"60%"}} alt="Dittologo"/>
                     <p className='mt-4'>Our asset management venture <br/>that is creating simple and transparent index<br/>funds to help you save for your goals</p>
                     </div>
                 </div>
