@@ -7,21 +7,41 @@ const ProtectedRoute = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [authenticated, setAuthenticated] = useState(false);
 
+    // useEffect(() => {
+    //     axios.get(
+    //         "https://mini-project-s81t.onrender.com/api/auth/me",
+    //         { withCredentials: true }
+    //     )
+    //     .then(() => {
+    //         setAuthenticated(true);
+    //     })
+    //     .catch(() => {
+    //         setAuthenticated(false);
+    //     })
+    //     .finally(() => {
+    //         setLoading(false);
+    //     });
+    // }, []);
+
     useEffect(() => {
-        axios.get(
-            "https://mini-project-s81t.onrender.com/api/auth/me",
-            { withCredentials: true }
-        )
-        .then(() => {
-            setAuthenticated(true);
-        })
-        .catch(() => {
-            setAuthenticated(false);
-        })
-        .finally(() => {
-            setLoading(false);
-        });
-    }, []);
+    console.log("ProtectedRoute is running");
+
+    axios.get(
+        "https://mini-project-s81t.onrender.com/api/auth/me",
+        { withCredentials: true }
+    )
+    .then((response) => {
+        console.log("Auth API success:", response.data);
+        setAuthenticated(true);
+    })
+    .catch((error) => {
+        console.log("Auth API error:", error);
+        setAuthenticated(false);
+    })
+    .finally(() => {
+        setLoading(false);
+    });
+}, []);
 
     useEffect(() => {
         if (!loading && !authenticated) {
