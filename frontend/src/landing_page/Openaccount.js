@@ -33,41 +33,68 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleLogin = async (e) => {
-        e.preventDefault();
+    // const handleLogin = async (e) => {
+    //     e.preventDefault();
 
-        try {
-            const response = await axios.post(
-                    `${process.env.REACT_APP_API_URL}/api/auth/login`,
-                {
-                    email,
-                    password
-                },
-                { withCredentials: true }
-            );
+    //     try {
+    //         const response = await axios.post(
+    //                 `${process.env.REACT_APP_API_URL}/api/auth/login`,
+    //             {
+    //                 email,
+    //                 password
+    //             },
+    //             { withCredentials: true }
+    //         );
 
-            alert(response.data.message);
-             navigate("https://mini-project-p671h131x-zerodha-clone3.vercel.app");
-             window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
+    //         alert(response.data.message);
+    //          navigate("https://mini-project-p671h131x-zerodha-clone3.vercel.app");
+    //          window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
              
              
 
-        } catch (error) {
-            alert(
-                error.response?.data?.message ||
-                "Login failed"
-            );
-        }
-    };
+    //     } catch (error) {
+    //         alert(
+    //             error.response?.data?.message ||
+    //             "Login failed"
+    //         );
+    //     }
+    // };
+
+
+const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await axios.post(
+            `${process.env.REACT_APP_API_URL}/api/auth/login`,
+            {
+                email,
+                password
+            },
+            { withCredentials: true }
+        );
+
+        alert(response.data.message);
+
+        window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
+
+    } catch (error) {
+        alert(
+            error.response?.data?.message ||
+            "Login failed"
+        );
+    }
+};
+
 
     return (
         <div>
