@@ -85,7 +85,7 @@ const handleLogin = async (e) => {
 
         alert(response.data.message);
 
-        window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
+        window.location.href = "https://mini-project-4o62-gin8tth2y-zerodha-clone3.vercel.app";
 
     } catch (error) {
         alert(
