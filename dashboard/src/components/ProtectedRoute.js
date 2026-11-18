@@ -8,32 +8,63 @@ const ProtectedRoute = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [authenticated, setAuthenticated] = useState(false);
 
-    useEffect(() => {
-        axios.get(
-            "https://mini-project-s81t.onrender.com/api/auth/me",
-            { withCredentials: true }
-        )
-        .then(() => {
-            setAuthenticated(true);
-        })
-        .catch(() => {
-            setAuthenticated(false);
-        })
-        .finally(() => {
-            setLoading(false);
-        });
-    }, []);
+    // useEffect(() => {
+    //     axios.get(
+    //         "https://mini-project-s81t.onrender.com/api/auth/me",
+    //         { withCredentials: true }
+    //     )
+    //     .then(() => {
+    //         setAuthenticated(true);
+    //     })
+    //     .catch(() => {
+    //         setAuthenticated(false);
+    //     })
+    //     .finally(() => {
+    //         setLoading(false);
+    //     });
+    // }, []);
 
 
-    useEffect(() => {
-        if (!loading && !authenticated) {
-            window.location.replace("https://mini-project-zeta-wheat.vercel.app");
-        }
-    }, [loading, authenticated]);
+    // useEffect(() => {
+    //     if (!loading && !authenticated) {
+    //         window.location.replace("https://mini-project-zeta-wheat.vercel.app");
+    //     }
+    // }, [loading, authenticated]);
 
-    if (loading || !authenticated) {
-        return <h3>Checking authentication...</h3>;
+    // if (loading || !authenticated) {
+    //     return <h3>Checking authentication...</h3>;
+    // }
+
+
+useEffect(() => {
+    console.log("ProtectedRoute is running");
+
+    axios.get(
+        "https://mini-project-s81t.onrender.com/api/auth/me",
+        { withCredentials: true }
+    )
+    .then((response) => {
+        console.log("Authentication successful:", response.data);
+        setAuthenticated(true);
+    })
+    .catch((error) => {
+        console.log("Authentication error:", error.response?.status);
+        console.log("Error details:", error.message);
+        setAuthenticated(false);
+    })
+    .finally(() => {
+        setLoading(false);
+    });
+}, []);
+
+useEffect(() => {
+    if (!loading && !authenticated) {
+        console.log("Redirecting to frontend...");
+        window.location.replace(
+            "https://mini-project-zeta-wheat.vercel.app"
+        );
     }
+}, [loading, authenticated]);
 
     return children;
 };
