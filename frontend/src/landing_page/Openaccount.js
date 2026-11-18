@@ -31,7 +31,7 @@
 // export default Openaccount;
 
 
-import React, { useState } from "react";
+import React,{useStateS} from "react";
 import axios from "axios";
 // import { useNavigate } from "react-router-dom";
 
