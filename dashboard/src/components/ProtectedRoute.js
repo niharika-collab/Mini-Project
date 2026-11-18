@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const ProtectedRoute = ({ children }) => {
+    console.log("ProtectedRoute component rendered");
 
     const [loading, setLoading] = useState(true);
     const [authenticated, setAuthenticated] = useState(false);
