@@ -56,8 +56,9 @@ const Login = () => {
             );
 
             alert(response.data.message);
-window.location.href = "http://localhost:3002";
-
+// window.location.href = "http://localhost:3002";
+             navigate("/dashboard");
+             
         } catch (error) {
             alert(
                 error.response?.data?.message ||
