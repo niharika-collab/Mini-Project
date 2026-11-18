@@ -25,7 +25,7 @@ const Signup = () => {
 
         try {
             const response = await axios.post(
-                "${https://mini-project-s81t.onrender.com}/api/auth/register",
+                `(${process.env.REACT_APP_API_URL}/api/auth/register)`,
                 {
                     username,
                     email,
