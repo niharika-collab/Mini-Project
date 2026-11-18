@@ -26,8 +26,8 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     
-    "https://mini-project-zeta-wheat.vercel.app/",
-    "https://mini-project-6n2arksaf-zerodha-clone3.vercel.app/",
+    "https://mini-project-zeta-wheat.vercel.app",
+    "https://mini-project-6n2arksaf-zerodha-clone3.vercel.app",
     "http://localhost:3000",
     "http://localhost:3002"
 ];
