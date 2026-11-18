@@ -9,7 +9,7 @@ function Team() {
             </div>
             <div className='row p-5   text-muted' style={{ lineHeight: "2" }}>
                 <div className='col-6 p-5 text-center'>
-                    <img src='\images\nithinKamath.jpg'style={{borderRadius:"100%",width:"60%"}} />
+                    <img src='\images\nithinKamath.jpg' alt='NitinKamath'style={{borderRadius:"100%",width:"60%"}} />
                     <div>
                         <p>Nitin Kamath</p>
                         <p>founder,CEO</p>
@@ -23,7 +23,7 @@ function Team() {
 
                        <p> Playing basketball is his zen.</p>
 
-                       <p> Connect on <a href=''>Homepage</a> / <a href=''>TradingQnA / Twitter</a></p>
+                       <p> Connect on <a href='https://nithinkamath.me/ target="_blank" rel="noopener noreferrer"'>Homepage</a> / <a href='https://x.com/Nithin0dha' target="_blank" rel="noopener noreferrer">TradingQnA / Twitter</a></p>
                 </div>
             </div>
         </div>

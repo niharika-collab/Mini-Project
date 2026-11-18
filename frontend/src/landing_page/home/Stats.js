@@ -21,10 +21,10 @@ function Stats() {
                     <p>with initiatives like Nudge and kill Switch</p>
                 </div>
                 <div className='col-6 p-5'>
-                    <img src='/images/ecosystem.png'alt='ecosystem image'style={{width:"110%"}}/>
+                    <img src='/images/ecosystem.png'alt='ecosystemImage'style={{width:"110%"}}/>
                     <div>
-                        <a href='' className='mx-5'>Explore our products</a>
-                        <a href=''>Try kite</a>
+                        <a href='https://zerodha.com/products/' className='mx-5'target="_blank" rel="noopener noreferrer">Explore our products</a>
+                        <a href="https://kite.zerodha.com/" target="_blank" rel="noopener noreferrer">Try kite</a>
                     </div>
                 </div>
             </div>
