@@ -11,7 +11,7 @@ const Menu = () => {
 
   // Fetch logged-in user details
   useEffect(() => {
-    axios.get("http://localhost:3001/api/auth/me", {
+    axios.get("https://mini-project-s81t.onrender.com/api/auth/me", {
       withCredentials: true
     })
     .then((res) => {
@@ -35,12 +35,12 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:3001/api/auth/logout",
+        "https://mini-project-s81t.onrender.com/api/auth/logout",
         {},
         { withCredentials: true }
       );
 
-      window.location.replace("http://localhost:3000");
+      window.location.replace("https://mini-project-zeta-wheat.vercel.app");
 
     } catch (error) {
       console.log("Logout error:", error);

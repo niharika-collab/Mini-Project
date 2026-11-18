@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
 
     useEffect(() => {
         axios.get(
-            "http://localhost:3001/api/auth/me",
+            "https://mini-project-s81t.onrender.com/api/auth/me",
             { withCredentials: true }
         )
         .then(() => {
@@ -25,7 +25,7 @@ const ProtectedRoute = ({ children }) => {
 
     useEffect(() => {
         if (!loading && !authenticated) {
-            window.location.replace("http://localhost:3000");
+            window.location.replace("https://mini-project-zeta-wheat.vercel.app");
         }
     }, [loading, authenticated]);
 

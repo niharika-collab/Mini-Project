@@ -24,10 +24,24 @@ app.use(express.json());
 
 app.use(cookieParser());
 
+// const allowedOrigins = [
+//     "http://localhost:3000",
+//     "http://localhost:3001",
+//      "http://localhost:3002"
+// ];
+
+// app.use(cors({
+//     origin: ["https://mini-project-zeta-wheat.vercel.app",
+//         "https://mini-project-p671h131x-zerodha-clone3.vercel.app"
+//     ],
+//     credentials: true
+// }));
+
 const allowedOrigins = [
     "http://localhost:3000",
-    "http://localhost:3001",
-     "http://localhost:3002"
+    "http://localhost:3002",
+    "https://mini-project-zeta-wheat.vercel.app",
+    "https://mini-project-p671h131x-zerodha-clone3.vercel.app"
 ];
 
 app.use(cors({

@@ -47,7 +47,7 @@ const Login = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:3001/api/auth/login",
+                    "${https://mini-project-s81t.onrender.com}/api/auth/login",
                 {
                     email,
                     password
@@ -56,9 +56,9 @@ const Login = () => {
             );
 
             alert(response.data.message);
-// window.location.href = "http://localhost:3002";
-             navigate("/dashboard");
+             window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
              
+
         } catch (error) {
             alert(
                 error.response?.data?.message ||
