@@ -56,7 +56,7 @@ const Login = () => {
             );
 
             alert(response.data.message);
-             navigate("/dashboard");
+            //  navigate("/dashboard");
              window.location.href = "https://mini-project-p671h131x-zerodha-clone3.vercel.app";
              
              
