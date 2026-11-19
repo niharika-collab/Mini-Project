@@ -1,36 +1,4 @@
 
-// import React from 'react';
-
-// function Openaccount() {
-//   return (
-//     <div className="container p-5">
-//       <div className="row text-center mb-5">
-//         <h1 className="mt-5">Open a Zerodha account</h1>
-
-//         <p>
-//           Modern platforms and apps, ₹0 investments, and flat ₹20
-//           intraday and F&O trades.
-//         </p>
-
-//         <button
-//           className="p-3"
-//           style={{
-//             width: "auto",
-//             lineHeight: "1",
-//             margin: "0 auto",
-//             backgroundColor: "skyblue"
-//           }}
-//         >
-//           Sign up now
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Openaccount;
-
-
 import React,{useState} from "react";
 import axios from "axios";
 // import { useNavigate } from "react-router-dom";
